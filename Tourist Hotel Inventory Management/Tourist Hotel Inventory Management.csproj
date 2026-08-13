@@ -1,0 +1,279 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{02218831-EAB8-4194-840A-B0AFC6CB41C3}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>Tourist_Hotel_Inventory_Management</RootNamespace>
+    <AssemblyName>Tourist Hotel Inventory Management</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Windows.Forms.DataVisualization" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="BasePage.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="BasePage.Designer.cs">
+      <DependentUpon>BasePage.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Item.cs" />
+    <Compile Include="LangSettings.cs" />
+    <Compile Include="RegisterForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="RegisterForm.Designer.cs">
+      <DependentUpon>RegisterForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SessionManager.cs" />
+    <Compile Include="Uc Items2.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Uc Items2.Designer.cs">
+      <DependentUpon>Uc Items2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UC_About.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UC_About.Designer.cs">
+      <DependentUpon>UC_About.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UC_addItems.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UC_addItems.Designer.cs">
+      <DependentUpon>UC_addItems.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UC_Add_Supplier.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UC_Add_Supplier.Designer.cs">
+      <DependentUpon>UC_Add_Supplier.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Dashboard.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Dashboard.Designer.cs">
+      <DependentUpon>Dashboard.cs</DependentUpon>
+    </Compile>
+    <Compile Include="LoginForm2.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="LoginForm2.Designer.cs">
+      <DependentUpon>LoginForm2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form1.Designer.cs">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Stock_in.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Stock_in.Designer.cs">
+      <DependentUpon>Stock_in.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Stock_Out.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Stock_Out.Designer.cs">
+      <DependentUpon>Stock_Out.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UC_Settings_Change_Password.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UC_Settings_Change_Password.Designer.cs">
+      <DependentUpon>UC_Settings_Change_Password.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UC_Settings_user_acc.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UC_Settings_user_acc.Designer.cs">
+      <DependentUpon>UC_Settings_user_acc.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UC_Suppliers.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UC_Suppliers.Designer.cs">
+      <DependentUpon>UC_Suppliers.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UC_Dashboard.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UC_Dashboard.Designer.cs">
+      <DependentUpon>UC_Dashboard.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UC_Items.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UC_Items.Designer.cs">
+      <DependentUpon>UC_Items.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UC_Reports.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UC_Reports.Designer.cs">
+      <DependentUpon>UC_Reports.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UC_User_Management.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UC_User_Management.Designer.cs">
+      <DependentUpon>UC_User_Management.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UC_user_setting.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UC_user_setting.Designer.cs">
+      <DependentUpon>UC_user_setting.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="BasePage.resx">
+      <DependentUpon>BasePage.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RegisterForm.resx">
+      <DependentUpon>RegisterForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Uc Items2.resx">
+      <DependentUpon>Uc Items2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UC_About.resx">
+      <DependentUpon>UC_About.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UC_addItems.resx">
+      <DependentUpon>UC_addItems.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UC_Add_Supplier.resx">
+      <DependentUpon>UC_Add_Supplier.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Dashboard.resx">
+      <DependentUpon>Dashboard.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LoginForm2.resx">
+      <DependentUpon>LoginForm2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="Stock_in.resx">
+      <DependentUpon>Stock_in.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Stock_Out.resx">
+      <DependentUpon>Stock_Out.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UC_Settings_Change_Password.resx">
+      <DependentUpon>UC_Settings_Change_Password.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UC_Settings_user_acc.resx">
+      <DependentUpon>UC_Settings_user_acc.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UC_Suppliers.resx">
+      <DependentUpon>UC_Suppliers.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UC_Dashboard.resx">
+      <DependentUpon>UC_Dashboard.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UC_Items.resx">
+      <DependentUpon>UC_Items.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UC_Reports.resx">
+      <DependentUpon>UC_Reports.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UC_User_Management.resx">
+      <DependentUpon>UC_User_Management.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UC_user_setting.resx">
+      <DependentUpon>UC_user_setting.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Forms\" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include=".NETFramework,Version=v4.7.2">
+      <Visible>False</Visible>
+      <ProductName>Microsoft .NET Framework 4.7.2 %28x86 and x64%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
